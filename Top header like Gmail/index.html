@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <title>Website Like Gmail</title>
+</head>
+<body>
+     <div class="top-nav">
+        <img src="user.png" title="Google Account
+Your Name
+Youremail@gmail.com">
+<img src="nine dots.png" title="Google Apps">
+<i class="fa fa-cog" title="Settings"></i>
+<i class="fa fa-question-circle" title="Support"></i>
+
+<div class="center-input">
+    <input type="text" name="search" title="Search" placeholder="Search Mail">
+    <i class="fa fa-search" title="Search"></i>
+    <i class="fa fa-chevron-down"></i>
+</div>
+
+
+<div class="left-icon">
+    <img src="gmail.png"> 
+    <i class="fa fa-bars" title="Main Menu"></i>
+    <h2>Gmail</h2>
+</div>
+     </div>
+     <div class="menu">
+   <i class="fa fa-check" style="z-index: 100;" id="tickall"></i>     <i class="fa fa-square" id="selectall." onclick="selectall()" aria-hidden="true" title="Select"></i>   <i class="fa fa-refresh" onclick="refresh()" aria-hidden="true" title="Refresh"></i>   <i class="fa fa-ellipsis-v" aria-hidden="true" title="More"></i>
+       <div class="pages">
+            <p style="position: absolute; top: 9.5%; font-weight: bolder; font-size: 16px; font-family: monospace; right: 7%; z-index: 100; cursor: pointer;">1-50 of 400       <  > </p>   <i class="fa fa-keyboard-o" aria-hidden="true"></i>       <i class="fa fa-chevron-down" aria-hidden="true"></i> 
+       </div> 
+    </div> 
+    <div class="menu-of-selection">
+        <div class="menu-selector">
+            <i class="fa fa-mobile"></i>  <a href="#" style="color: red; border-bottom: 4px solid red ; padding-bottom: 10px;">Inbox</a>   <i class="fa fa-users"></i>  <a href="#">Social</a>  <i class="fa fa-tag"></i>  <a href="#">Promotions</a>
+        </div>
+    </div>
+    <br>
+<div class="mail">
+ <div class="mail-one">
+    <i class="fa fa-square" onclick="myfun1()" id="square."></i>  <i class="fa fa-check" id="check1"></i> <i class="fa fa-star" id="star." onclick="star1()"></i>   <h2 style="position: absolute; top: 28.5%; color: rgb(77, 77, 77); font-size: 12px; text-transform: capitalize; left: 26%;">Facebook</h2>     <p style="position: absolute; top: 28.4%; left: 34%; font-size: 10px; font-weight: 400; font-family: sans-serif;"><B>Lorem ipsum dolor sit amet consectetur </B>adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing</p>
+ </div>
+ <div class="mail-two">
+    <i class="fa fa-square" onclick="myfun2()" id="square.."></i>  <i class="fa fa-check" id="check2"></i> <i class="fa fa-star" id="star.." onclick="star2()"></i>   <h2 style="position: absolute; top: 34.5%; color: rgb(77, 77, 77); font-size: 12px; text-transform: capitalize; left: 26%;">YouTube</h2>     <p style="position: absolute; top: 34.4%; left: 34%; font-size: 10px; font-weight: 400; font-family: sans-serif;"><B>Lorem ipsum dolor sit amet consectetur </B>adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing</p> 
+</div>
+<div class="mail-two">
+    <i class="fa fa-square" onclick="myfun3()" id="square..."></i>  <i class="fa fa-check" id="check3"></i> <i class="fa fa-star" id="star..." onclick="star3()"></i>   <h2 style="position: absolute; top: 40.5%; color: rgb(77, 77, 77); font-size: 12px; text-transform: capitalize; left: 26%;">Google</h2>     <p style="position: absolute; top: 40.6%; left: 34%; font-size: 10px; font-weight: 400; font-family: sans-serif;"><B>Lorem ipsum dolor sit amet consectetur </B>adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing</p> 
+</div>
+<div class="mail-two">
+    <i class="fa fa-square" onclick="myfun4()" id="square...."></i>  <i class="fa fa-check" id="check4"></i> <i class="fa fa-star" id="star...." onclick="star4()"></i>   <h2 style="position: absolute; top: 46.5%; color: rgb(77, 77, 77); font-size: 12px; text-transform: capitalize; left: 26%;">Twitter</h2>     <p style="position: absolute; top: 46.8%; left: 34%; font-size: 10px; font-weight: 400; font-family: sans-serif;"><B>Lorem ipsum dolor sit amet consectetur </B>adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing</p>  
+</div>
+<div class="mail-one">
+    <i class="fa fa-square" onclick="myfun5()" id="square....."></i>  <i class="fa fa-check" id="check5"></i> <i class="fa fa-star" id="star....." onclick="star5()"></i>   <h2 style="position: absolute; top: 52.5%; color: rgb(77, 77, 77); font-size: 12px; text-transform: capitalize; left: 26%;">Instagram</h2>     <p style="position: absolute; top: 53%; left: 34%; font-size: 10px; font-weight: 400; font-family: sans-serif;"><B>Lorem ipsum dolor sit amet consectetur </B>adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing</p>  
+</div>
+</div>
+<div class="left-side-menu"> <br>
+    <button class="compose"><i class="fa fa-plus"></i>Compose</button>
+    <ul>
+        <li><a href="#" style="color: red;" class="inbox"><i class="fa fa-mobile"></i>Inbox</a></li><br>
+        <li><a href="#"><i class="fa fa-star-o"></i>Starred</a></li><br>
+        <li><a href="#"><i class="fa fa-clock-o"></i>snoozed</a></li><br>
+        <li><a href="#"><i class="fa fa-paper-plane-o"></i>sent</a></li><br>
+        <li><a href="#"><i class="fa fa-files-o"></i>Draft</a></li><br>
+        <li><a href="#"><i class="fa fa-arrow-down"></i>More</a></li>
+    </ul>
+   <div class="line"></div>
+   <div class="line2"></div>
+   <style>
+       .line{
+           width: 100%;
+           height: 2px; background-color: #d1d1d1;
+           position: absolute;
+           top: 79%;
+       }
+       .line2{
+           width: 13%;
+           height: 8px;
+           background-color: #d1d1d1;
+           position: absolute;
+           top: 82%;
+           left: 38%;
+           cursor: ns-resize;
+       }
+   </style>
+
+<div class="meet">
+    <h2>Meet</h2>
+<i class="fa fa-video-camera"></i> <a href="#">New Meeting</a> <br> <br>
+<i class="fa fa-keyboard-o"></i> <a href="#">Join a Meeting</a>
+</div>
+<div class="line" style="top: 110%;"></div>
+<div class="hangout">
+    <h2>Hangouts</h2>
+    <i class="fa fa-user"></i>   <a href="#">Muhammad Bin Yasir</a>    <i class="fa fa-plus"></i>
+</div>
+<div class="line" style="position: absolute; top: 130%;"></div>
+<div class="recent"></div>
+</div>
+</body>
+</html>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #ffff;
+    }
+    .top-nav{
+        width: 100%;
+        height: 10vh;
+        background-color: #fff;
+        border-bottom: 1px solid #d1d1d1;
+        box-sizing: border-box;
+    }
+    .top-nav img{
+        width: 30px;
+        height: 30px;
+        float: right;
+        margin-right: 30px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .top-nav i{
+        font-size: 30px;
+        float: right;
+        margin-right: 30px;
+        margin-top: 20px;
+        -webkit-text-stroke-color: rgb(122, 122, 122);
+        -webkit-text-stroke-width: 2px;
+        color: transparent;
+        cursor: pointer;
+    }
+    .center-input{
+        text-align: center;
+        margin-left: 220px;
+    }
+    .center-input input[type="text"]
+    {
+        margin-top: 8px;
+        width: 600px;
+        height: 45px;
+        font-weight: bolder;
+        border: none;
+        outline: none;
+        background-color: #f1efef;
+        padding-left: 45px;
+        border-radius: 10px;
+    }
+    .center-input input[type="text"]:focus{
+        background-color: #fff;
+        box-shadow: 0 0 4px 0 rgba(0,0,0,0.3);
+    }
+    .fa-search{
+        position: absolute;
+        right: 70.5%;
+        font-size: 20px!important;
+        color: #7a7a7a!important;
+        top: -0.2%;
+    }
+    .fa-chevron-down{
+        position: absolute;
+        right: 24%;
+        top: 0.8%;
+        color: #7a7a7a!important;
+        font-size: 15px!important;
+    }
+    .left-icon{
+        float: left;
+        margin-top: -60px;
+        margin-left: 30px;
+    }
+    .fa-bars{
+        color: #000!important;
+        -webkit-text-stroke-width: none!important;
+        -webkit-text-stroke-color: none!important;
+    }
+    .left-icon img{
+        width: 62px;
+        height: 62px;
+        margin-top: 3px;
+    }
+    .left-icon h2{
+        font-size: 30px;
+        color: #7a7a7a;
+        font-weight: bolder;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        position: absolute;
+        left: 11%;
+        top: -2.3%;
+    }
+</style>
+
+
+
+<style>
+
+.mail{
+    width: 100%;
+    height: 70vh;
+    background-color: #fff;
+}
+.mail .mail-one{
+    width: 80%;
+    height: 6vh;
+    background-color: #d1d1d1;
+    float: right;
+    border: 1px solid #7a7a7a;
+}
+.mail .mail-one:hover{
+    box-shadow: 0 4px 10px 3px rgba(0,0,0,0.3);
+    z-index: -1;
+}
+.mail .mail-two:hover{
+    box-shadow: 0 4px 10px 3px rgba(0,0,0,0.3);
+    z-index: -1;
+}
+.fa-square{
+    color: transparent;
+    font-size: 18px!important;
+    -webkit-text-stroke-color: #7a7a7a;
+    -webkit-text-stroke-width: 1px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/*.fa-check:hover .fa-square{
+    color: #000!important;
+    border: none;
+}
+.fa-square:hover .fa-check{
+    color: #fff!important;
+}*/
+#check1, #check2, #check3, #check4, #check5{
+    position: absolute;
+    left: 20.9%;
+    font-size: 11px;
+    color: white;
+    display: none;
+    top: 30%;
+}
+#check2{
+    position: absolute;
+    left: 20.9%;
+    font-size: 11px;
+    color: white;
+    display: none;
+    top: 36%;
+    z-index: 100;   
+}
+#check3{
+    position: absolute;
+    left: 20.9%;
+    font-size: 11px;
+    color: white;
+    display: none;
+    top: 42%;
+    z-index: 100; 
+}
+#check4{
+    position: absolute;
+    left: 20.9%;
+    font-size: 11px;
+    color: white;
+    display: none;
+    top: 48.5%;
+    z-index: 100;
+}
+#check5{
+    position: absolute;
+    left: 20.9%;
+    font-size: 11px;
+    color: white;
+    display: none;
+    top: 54.7%;
+    z-index: 100;
+}
+.fa-star{
+    color: transparent;
+    -webkit-text-stroke-color: #7a7a7a;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.mail .mail-two{
+    width: 80%;
+    height: 6vh;
+    background-color: #fff;
+    float: right;
+    border: 1px solid #7a7a7a;
+    border-top: none;
+}
+</style>
+
+<style>
+    .left-side-menu{
+        width: 19%;
+        height: 60vh;
+        background-color: #ffff;
+        position: absolute;
+        top: 10.1%;
+    }
+    .left-side-menu ul{
+        float: left;
+        margin-left: -22px;
+        margin-top: 20px;
+    }
+    .left-side-menu ul li{
+        list-style-type: none;
+    }
+    .left-side-menu  a{
+        text-decoration: none;
+        color: #000;
+        font-size: 17px;
+        font-weight: bolder;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+    .left-side-menu i{
+        margin-right: 25px;
+    }
+    .left-side-menu .compose{
+        width: 140px;
+        height: 60px;
+        margin-left: 15px;
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+        background-color: #fff;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        border-radius: 40px;
+        color: #000;
+        font-weight: bolder;
+        align-items: center;
+        display: flex;
+        text-transform: capitalize;
+        font-weight: bolder;
+        font-family: monospace;
+        font-size: 17px;
+    }
+    .left-side-menu .compose:hover{
+        box-shadow: 4px 5px 8px 3px rgba(0,0,0,0.3);
+    }
+    .left-side-menu .compose .fa-plus{
+        font-size: 30px;
+        background:-moz-linear-gradient(top, red 0%, yellow 100%); 
+    background: -webkit-linear-gradient(top,red 0%,yellow 100%); 
+    background: linear-gradient(to bottom, red 0%,yellow 110%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color:transparent;
+   margin-left: 7px;
+    }
+</style>
+
+<style>
+    .meet{
+        position: absolute;
+        top: 82%;
+    }
+    .meet h2{
+        font-weight: bolder;
+        font-size: 17px;
+        margin-left: 40px;
+        font-family: sans-serif;
+        font-style: bold;
+    }
+    .meet i{
+        margin-left: 40px;
+        color: #7777;
+        -webkit-text-stroke-width: 0.3px;
+        -webkit-text-stroke-color: #000;
+    }
+    .meet a{
+        font-size: 17px;
+        font-weight: 700;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+</style>
+
+<style>
+    .hangout{
+        position: absolute;
+        top: 110%;
+    }
+    .hangout h2{
+        font-weight: bolder;
+        font-size: 17px;
+        margin-left: 40px;
+        font-family: sans-serif;
+        font-style: bold;
+    }
+    .hangout i{
+        margin-left: 30px;
+        color: #7777;
+        -webkit-text-stroke-width: 0.3px;
+        -webkit-text-stroke-color: #000;
+    }
+    .hangout a{
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: -20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+</style>
+
+<style>
+    .menu{
+        width: 100%;
+        height: 6vh;
+        background-color: #fff;
+        border-bottom: 1px solid #d1d1d1;
+    }
+    .menu .fa-square{
+        position: absolute;
+        top: 10.5%;
+        visibility: visible;
+        left: 20%;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .menu .fa-check{
+        z-index: 100;
+        top: 12.2%;
+        font-size: 12px;
+        left: 20.9%;
+        display: none;
+        color: white;
+        position: absolute;
+    }
+    .menu .fa-refresh{
+        position: absolute;
+        top: 11.8%;
+        visibility: visible;
+        color: #000;
+        z-index: 100;
+        left: 23%;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .menu .fa-ellipsis-v{
+        position: absolute;
+        top: 11.8%;
+        visibility: visible;
+        color: #000;
+        z-index: 100;
+        left: 26%;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .menu .fa-keyboard-o{
+        position: absolute;
+        top: 11.8%;
+        color: #000;
+        z-index: 100;
+        font-size: 20px;
+        cursor: pointer;
+        right: 4%;
+    }
+    .menu .fa-chevron-down{
+        position: absolute;
+        top: 11.9%;
+        color: #000;
+        z-index: 100;
+        font-size: 24px;
+        cursor: pointer;
+        right: 2.6%;
+    }
+</style>
+
+<style>
+    .menu-of-selection{
+        width: 100%;
+        height: 9vh;
+        background-color: #fff;
+        border-bottom: 1px solid #d1d1d1;
+        text-align: center;
+        justify-content: center;
+    }
+    .menu-selector{
+    }
+    .menu-selector i{
+        font-size: 25px;
+        margin-top: 22px;
+        color: rgb(90, 83, 83);
+    }
+    .menu-selector .fa-mobile{
+        color: red;
+    }
+    .menu-selector a{
+        text-decoration: none;
+        color: rgb(90, 83, 83);
+        font-size: 25px;
+        margin-right: 120px;
+}
+</style>
+
+<script>
+    function myfun1(){
+      document.getElementById("check1").style.display="block";
+      document.getElementById("square.").style.color="black"
+    }
+    function myfun2(){
+      document.getElementById("check2").style.display="block";
+      document.getElementById("square..").style.color="black"
+    }
+    function myfun3(){
+      document.getElementById("check3").style.display="block";
+      document.getElementById("square...").style.color="black"
+    }
+    function myfun4(){
+      document.getElementById("check4").style.display="block";
+      document.getElementById("square....").style.color="black"
+    }
+    function myfun5(){
+      document.getElementById("check5").style.display="block";
+      document.getElementById("square.....").style.color="black"
+    }
+
+
+
+
+    function star1(){
+        document.getElementById("star.").style.color="yellow";
+    }
+    function star2(){
+        document.getElementById("star..").style.color="yellow";
+    }
+    function star3(){
+        document.getElementById("star...").style.color="yellow";
+    }
+    function star4(){
+        document.getElementById("star....").style.color="yellow";
+    }
+    function star5(){
+        document.getElementById("star.....").style.color="yellow";
+    }
+
+
+    function selectall(){
+    document.getElementById("check1").style.display="block";
+      document.getElementById("square.").style.color="black"
+
+      document.getElementById("check2").style.display="block";
+      document.getElementById("square..").style.color="black"
+
+      document.getElementById("check3").style.display="block";
+      document.getElementById("square...").style.color="black"
+
+      document.getElementById("check4").style.display="block";
+      document.getElementById("square....").style.color="black"
+
+      document.getElementById("check5").style.display="block";
+      document.getElementById("square.....").style.color="black"
+
+      document.getElementById("tickall").style.display="block";
+      document.getElementById("selectall.").style.color="black"
+
+    }
+
+    function refresh(){
+        window.location.reload();
+    }
+</script>
